@@ -26,7 +26,7 @@ class BooksController < ApplicationController
     # 詳細画面へリダイレクトしたときに、成功しましたと言うメッセージを表示させる。
     # https://pikawaka.com/rails/flash
     if @book.save
-      flash[:notice] = "Book was successfully created."
+      flash[:notice] = "Book was successfully apple created."
       redirect_to book_path(@book.id)
     else
       @books = Book.all
